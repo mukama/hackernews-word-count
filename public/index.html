@@ -9,10 +9,15 @@
   <h1>HackerNews Word Count</h1>
   <h2>Endpoints</h2>
   <p>
-    1. <a href="/api/v1/common-in-titles">/api/v1/common-in-titles?limit=25&titles=250</a>
+    1. <a href="/api/v1/common-in-titles">/api/v1/common-in-titles</a> <br>
+    Returns the top 25 most occuring words from the titles of the last 250 posted
+    stories and the corresponding amount of times each of these top words appears.
   </p>
   <p>
-    2. <a href="/api/v1/common-in-comments">/api/v1/common-in-comments?limit=25&titles=1000</a>
+    2. <a href="/api/v1/common-in-comments">/api/v1/common-in-comments</a> <br>
+    From the last 1000 items currently available via the hackernews API,
+    selects only the comments texts and returns the
+    top 25 most occuring words and their corresponding number of times they occur.
   </p>
 </body>
 

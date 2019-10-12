@@ -23,8 +23,6 @@ const hackernews = {
       }
     }
 
-    console.log(ids)
-
     return await Promise.all(ids.map(id => {
       return axios.get(`${ENDPOINT}/item/${id}.json?print=pretty`)
         .then(response => response.data)
